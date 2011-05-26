@@ -2,6 +2,13 @@
 <script type="text/javascript" src="foo.js"></script>
 <link rel="stylesheet" type="text/css" href="foo.css"></style>
 
+
+* * *
+<span class="foo">
+Now ***thats*** a deal
+</span>
+
+
 * * *
 ## headings
 # we excel on ice (h1)
@@ -31,13 +38,12 @@
 
     /bin/bash: s: command not found
 * * *
-*Italics*. Not italics.
-
-__Bold__. Not bold.
+*Italics*. Not italics.  
+**Bold**. Not bold.  
+***Bold and italics***. Neither of those things.
 
 * * *
 ## links (h2)
 <http://www.google.com>  
-[yahoo!](http://www.yahoo.com)
-
+[my github](http://github.com/markhaskamp)
 

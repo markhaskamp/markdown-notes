@@ -1,0 +1,35 @@
+-- Headings --
+#
+##
+###
+
+
+-- Blockquotes --
+>
+>> nested
+
+
+-- Code Block --
+indent by 4 spaces
+
+
+-- HR Rulers __
+* * *
+
+
+-- links --
+<http://www.google.com>
+[my github](http://github.com/markhaskamp)
+
+
+-- Emphasis --
+*italics*
+**bold**
+***italics and bold***
+
+
+-- New Line --
+append 2 spaces at end of preceding line
+or preceding blank line
+
+
