@@ -1,6 +1,6 @@
 <script type="text/javascript" src="jquery-1.6.1.min.js"></script>
 <script type="text/javascript" src="foo.js"></script>
-<link rel="stylesheet" type="text/css" href="foo.css"></style>
+<link rel="stylesheet" type="text/css" href="basic.css"></style>
 
 
 * * *
@@ -17,10 +17,10 @@ Now ***thats*** a deal
 
 * * *
 ## blockquote (h2)
-> This is a blockquote. The quick brown fox jumped over the lazy dog. Now is the time for all good men to come to the aid of their country.
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nibh lacus. Aenean accumsan eleifend leo, mattis interdum metus placerat eu. Quisque diam urna, luctus semper commodo tincidunt, malesuada in orci. Phasellus erat neque, convallis vel hendrerit nec, porta eget odio. Donec ornare fermentum mi ac tempus. Cras dapibus purus a erat pretium sit amet fermentum tellus mollis. Curabitur eget dolor in erat tristique mollis. Maecenas vel diam eu elit vestibulum condimentum. Fusce commodo lorem et arcu laoreet a pulvinar ipsum gravida. Mauris iaculis nunc at justo malesuada eu viverra massa dictum. In sit amet ante ut eros convallis ultricies. Morbi molestie tempus odio id lacinia. Nunc in nulla lorem. Ut at justo non augue volutpat ornare varius a augue. Aliquam at odio ut erat suscipit ultricies. Nam vel leo eu massa tempor faucibus. Suspendisse accumsan vestibulum nibh eget venenatis. 
 
 > another block quote
->> This is a nested blockquote. The quick brown fox jumped over the lazy dog. Now is the time for all good men to come to the aid of their country.
+>> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod metus cursus tellus facilisis et facilisis nibh adipiscing. Sed feugiat mauris ac diam rhoncus porta ultricies leo vehicula. Donec tellus diam, aliquet vitae hendrerit vitae. 
 
 
 > block quote
