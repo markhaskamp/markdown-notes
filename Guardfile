@@ -5,8 +5,6 @@
 #   watch('file/path') { `command(s)` }
 #
 guard 'shell' do
-  watch('(.*).txt') {|m| `tail #{m[0]}` }
-
 #  watch('(.*).md') {|m| `~/bin/Markdown.pl #{m[0]} > #{m[1]}.html` }
   watch(%r{^data/markdown/(.*)\.md}) {|m| `~/bin/Markdown.pl #{m[0]} > data/html/#{m[1]}.html` }
 end
