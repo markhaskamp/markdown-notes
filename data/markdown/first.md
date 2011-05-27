@@ -1,7 +1,3 @@
-<script type="text/javascript" src="jquery-1.6.1.min.js"></script>
-<script type="text/javascript" src="foo.js"></script>
-<link rel="stylesheet" type="text/css" href="basic.css"></style>
-
 
 * * *
 <span class="foo">
