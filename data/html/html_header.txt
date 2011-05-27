@@ -5,11 +5,3 @@
 
 <body id="body">
 <span id="toc">
-
-### Unix commands
-
-#### _find_  with cygwin in windows
-      find . -name "*.cs" | xargs grep -i &lt;pattern&gt;
-
-</span>
-</body>

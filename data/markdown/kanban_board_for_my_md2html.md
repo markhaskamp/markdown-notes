@@ -1,16 +1,10 @@
-<script type="text/javascript" src="jquery-1.6.1.min.js"></script>
-<script src="jquery.tableofcontents.min.js"></script>
-<script src="md2html.js"></script>
-<link rel="stylesheet" type="text/css" href="basic.css"></style>
-
-<body id="body">
-<span id="toc">
 
 ### Kanban Board for My Markdown to Html Process
 
 #### doing
-* create table of contents on page
-  * based on headings
+* style up the headings
+* two
+* three
 
 #### backlog
 * create collapsible regions
@@ -20,6 +14,6 @@
 * add separate header and footer html files
 
 #### done
+* create table of contents on page
+  * based on headings
 
-</span>
-</body>
