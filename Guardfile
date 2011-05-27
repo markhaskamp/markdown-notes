@@ -6,5 +6,8 @@
 #
 guard 'shell' do
 #  watch('(.*).md') {|m| `~/bin/Markdown.pl #{m[0]} > #{m[1]}.html` }
-  watch(%r{^data/markdown/(.*)\.md}) {|m| `~/bin/Markdown.pl #{m[0]} > data/html/#{m[1]}.html` }
+  watch(%r{^data/markdown/(.*)\.md}) do |m| 
+    puts "#{m[1]}.html"
+    `~/bin/Markdown.pl #{m[0]} > data/html/#{m[1]}.html` 
+  end
 end
