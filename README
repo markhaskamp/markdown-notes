@@ -3,4 +3,4 @@ Have guard/shell catch the changes and run markdown.pl against the .md file and 
 
 
 Table of contents generator is from 
-<http://truthanduntruth.com/development/jquery/plugins/headerlinks/#headerlinks_ident2>
+<http://truthanduntruth.com/development/jquery/plugins/headerlinks/>
