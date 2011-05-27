@@ -3,3 +3,6 @@
 Gemfile.lock
 *.html
 data/markdown/*.md
+
+! data/html/header.html
+! data/html/footer.html
