@@ -2,12 +2,13 @@
 ### Kanban Board for My Markdown to Html Process
 
 #### doing
-* create collapsible regions
+* move out of *markdown_spikes* directories
 
 #### backlog
+* create collapsible regions
 * create master page with table of contents for all html pages
   * with link on individual pages back to main TOC
-* move out of *markdown_spikes* directories
+* include .md files in git repository?
 
 #### done
 * create table of contents on page
