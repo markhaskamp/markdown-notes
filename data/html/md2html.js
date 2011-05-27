@@ -1,4 +1,7 @@
 $(document).ready( function() {
-  $('span#toc').tableOfContents(null, {depth: 4, topLinks: true});
+  $('div#toc').headerlinks({
+                 minlen: 0
+                ,headers: {use: true, depth: 4} 
+              });
 });
 

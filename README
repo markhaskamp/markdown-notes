@@ -1,2 +1,6 @@
 Write markdown syntax.
 Have guard/shell catch the changes and run markdown.pl against the .md file and create an .html file.
+
+
+Table of contents generator is from 
+<http://truthanduntruth.com/development/jquery/plugins/headerlinks/#headerlinks_ident2>
