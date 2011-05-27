@@ -10,3 +10,11 @@ h1, h2, h3, h4, h5 {
 .code {
   color: black;
 }
+
+.toc-top-link {
+  font-size: 0.70em;
+  font-variant: small-caps;
+  margin-left: 8px;
+  color: #000066;
+
+}
