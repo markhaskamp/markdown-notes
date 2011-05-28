@@ -11,8 +11,7 @@ $(document).ready( function() {
   hold_html += '\n<div>'
   $('.collapse').html(hold_html);
 
-  $('.collapse_region').toggle();
-  $('.collapse_toggle').click( function() { $('.collapse_region').toggle(); });
+  $('.collapse_toggle').click( function() { $(this).next().toggle(); });
 
 });
 
