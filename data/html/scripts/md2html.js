@@ -14,5 +14,8 @@ $(document).ready( function() {
   });
   $('.collapse_toggle').click( function() { $(this).next().toggle(); });
 
+$('.collapse_toggle').hover( function() { $(this).css('cursor', 'pointer'); },
+                             function() { $(this).css('cursor', 'default'); });
+  
 });
 
