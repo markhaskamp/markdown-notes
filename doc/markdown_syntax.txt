@@ -3,6 +3,15 @@
 ##
 ###
 
+-- Lists --
+1. a
+2. numbered
+3. list
+42. actual number doesn't matter
+
+* a
+* bulleted
+* lis;
 
 -- Blockquotes --
 >

@@ -7,8 +7,7 @@
 
 ## Actors
 
-* [Guard](https://github.com/guard/guard)
-    * [Guard-shell](https://github.com/guard/guard-shell)
+* [Guard](https://github.com/guard/guard), [Guard-shell](https://github.com/guard/guard-shell)
 
 * Markdown.pl
 
@@ -19,3 +18,4 @@
 
 ## Process
 
+## Links for Markdown syntax
