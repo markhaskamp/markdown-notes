@@ -3,13 +3,13 @@
 ## Description
 
 * Write markdown syntax.  
-* Have guard/guard-shell catch the changes and run markdown.pl against the .md file and create a corresponding .html file.
+* Have guard/guard-shell catch the changes and run markdown.php against the .md file and create a corresponding .html file.
 
 ## Actors
 
 * [Guard](https://github.com/guard/guard), [Guard-shell](https://github.com/guard/guard-shell)
 
-* Markdown.pl
+* [PHP markdown extra](http://michelf.com/projects/php-markdown/extra/)
 
 * jquery TOC plugin
     * <http://truthanduntruth.com/development/jquery/plugins/headerlinks/>
@@ -18,7 +18,7 @@
 
 * ruby (for Guard)
 
-* perl (for Markdown.pl)
+* php (for markdown.php)
 
 * [rvm](https://rvm.beginrescueend.com/)
 
@@ -41,8 +41,6 @@
             bundle install
 
 
-
-
 ## Process
 
 1. Start Guard
@@ -54,6 +52,14 @@
     2.1 For Guard to pick up your changes, the Markdown files need to have the .md extension.
 
 3. Guard will detect the changes and create a corresponding file in the data/html/ directory.
+
+4. To create collapsible regions.
+
+>>In the markdown file, surround the desired collapsible region with:
+
+                <div markdown="1" class="collapse" title="your text here">
+                ...
+                </div>
 
 ## Links for Markdown syntax
 
