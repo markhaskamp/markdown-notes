@@ -20,9 +20,9 @@
 
 * perl (for Markdown.pl)
 
-* rvm
+* [rvm](https://rvm.beginrescueend.com/)
 
-* bundler
+* [bundler](http://gembundler.com/)
 
 * I've only tested the process on my MacBook Pro.
 
