@@ -1,8 +1,4 @@
 
-var img_src_switch = 2;
-var img_src = ["img/arrow_05.gif", 
-               "img/arrow_05_down.gif"];
-
 $(document).ready( function() {
   $('div#toc').headerlinks({
                  minlen: 0
@@ -16,7 +12,7 @@ $(document).ready( function() {
       title = ''
     }
     var hold_html = $(ele).html();
-    hold_html = '<span class="collapse_toggle"><img class="toggle_ind" src="img/arrow_05.gif" /> ' + title + '</span>\n<div class="collapse_region">' + hold_html;
+    hold_html = '<span class="collapse_toggle"><img class="toggle_ind" src="img/right.gif" /> ' + title + '</span>\n<div class="collapse_region">' + hold_html;
     hold_html += '\n<div>';
     $(ele).html(hold_html);
 
@@ -41,12 +37,15 @@ function hide_collapse_regions() {
 function toggle_collapse_region(ele) {
   ele.next().toggle();
 
-  var cur_img = $(ele).children()[0];
-  next_img_src = get_next_image_src()
-  $(cur_img).attr("src", next_img_src);
+  var cur_img_ele = $(ele).children()[0];
+  next_img_src = get_next_image_src(cur_img_ele)
+  $(cur_img_ele).attr("src", next_img_src);
 }
 
-function get_next_image_src() {
-  img_src_switch += 1;
-  return (img_src[img_src_switch%2]);
+function get_next_image_src(cur_img_ele) {
+  if ($(cur_img_ele).attr("src") === "img/right.gif") {
+    return ("img/down.gif");
+  }
+
+  return ("img/right.gif");
 }
