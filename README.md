@@ -28,7 +28,7 @@
 
 ## Setup
 
-1. clone [markdown-notes]((https://github.com/markhaskamp/markdown-notes) project from github into _your directory_.
+1. clone [markdown-notes](https://github.com/markhaskamp/markdown-notes) project from github into _your directory_.
 
         git clone git@github.com:markhaskamp/markdown-notes.git .
 
