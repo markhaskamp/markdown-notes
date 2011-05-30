@@ -1,0 +1,81 @@
+<html>
+<head>
+<script type="text/javascript" src="scripts/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.headerlinks.min_.js"></script>
+<script type="text/javascript" src="scripts/md2html.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/basic.css" />
+</head>
+
+<body id="body">
+  <div id="toc"></div>
+<h1>TaskWarrior</h1>
+
+<h2>command summary</h2>
+
+<h3>help</h3>
+
+<pre><code>task help
+man task
+man taskrc
+man task-tutorial
+man task-color
+man task-faq
+</code></pre>
+
+<h3>basics</h3>
+
+<dl>
+<dt>add a task</dt>
+<dd>task add [tags] [attrs] description</dd>
+
+<dd>task add "this description's got an apostrophe"</dd>
+
+<dd>task add this description\'s got an apostrophe</dd>
+
+<dt>delete a task</dt>
+<dd>task delete <em>ID</em></dd>
+
+<dt>mark a task as done</dt>
+<dd>done <em>id</em> [tags] [attrs] [description]</dd>
+
+<dt>list tasks</dt>
+<dd>task ls [project:<em>project</em>] [+<em>tag</em>]</dd>
+
+<dd>task list</dd>
+
+<dd>task long</dd>
+
+<dd>task minimal</dd>
+</dl>
+
+<h3>more commands</h3>
+
+<dl>
+<dt>show all tags</dt>
+<dd>task tags</dd>
+
+<dt>add a task to a project</dt>
+<dd>task project:<em>project</em> add <em>description</em></dd>
+
+<dd><strong>also</strong> task <em>id-of-last-description</em> project:<em>project-name</em></dd>
+
+<dt>add a tag to a task</dt>
+<dd>task add +<em>tag</em> <em>description</em></dd>
+
+<dd><strong>also</strong> task <em>id-of-last-description</em> +<em>tag</em></dd>
+
+<dt>modify an existing task</dt>
+<dd>task <em>id</em> /before/after/[g]</dd>
+
+<dd>task <em>id</em> edit</dd>
+
+<dd>task <em>id</em> annotate <em>description</em></dd>
+</dl>
+
+<h2>Links</h2>
+
+<p><a href="http://www.taskwarrior.org">taskwarrior.org</a></p>
+
+
+</body>
+</html>

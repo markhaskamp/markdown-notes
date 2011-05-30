@@ -1,0 +1,93 @@
+<html>
+<head>
+<script type="text/javascript" src="../html_src/scripts/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="../html_src/scripts/jquery.headerlinks.min_.js"></script>
+<script type="text/javascript" src="../html_src/scripts/md2html.js"></script>
+<link rel="stylesheet" type="text/css" href="../html_src/styles/basic.css" />
+</head>
+
+<body id="body">
+  <div id="toc"></div>
+<h1>Markdown to HTML Notes</h1>
+
+<h2>Description</h2>
+
+<ul>
+<li>Write markdown syntax.  </li>
+<li>Have guard/guard-shell catch the changes and run markdown.php against the .md file and create a corresponding .html file.</li>
+</ul>
+
+<h2>Actors</h2>
+
+<ul>
+<li><p><a href="https://github.com/guard/guard">Guard</a>, <a href="https://github.com/guard/guard-shell">Guard-shell</a></p></li>
+<li><p><a href="http://michelf.com/projects/php-markdown/extra/">PHP markdown extra</a></p></li>
+<li><p>jquery TOC plugin</p>
+
+<ul>
+<li><a href="http://truthanduntruth.com/development/jquery/plugins/headerlinks/">http://truthanduntruth.com/development/jquery/plugins/headerlinks/</a></li>
+</ul></li>
+</ul>
+
+<h2>Prerequisite software</h2>
+
+<ul>
+<li><p>ruby (for Guard)</p></li>
+<li><p>php (for markdown.php)</p></li>
+<li><p><a href="https://rvm.beginrescueend.com/">rvm</a></p></li>
+<li><p><a href="http://gembundler.com/">bundler</a></p></li>
+<li><p>I've only tested the process on my MacBook Pro.</p></li>
+</ul>
+
+<h2>Setup</h2>
+
+<ol>
+<li><p>clone [markdown-notes]((https://github.com/markhaskamp/markdown-notes) project from github into <em>your directory</em>.</p>
+
+<pre><code>git clone git@github.com:markhaskamp/markdown-notes.git .
+</code></pre></li>
+<li><p>from <em>your directory</em></p>
+
+<p>2.1. set up your ruby gems</p>
+
+<pre><code>    gem install bundle
+    rvm gemset create markdown_notes
+    bundle install
+</code></pre></li>
+</ol>
+
+<h2>Process</h2>
+
+<ol>
+<li><p>Start Guard</p>
+
+<pre><code>bundle exec guard
+</code></pre></li>
+<li><p>Create/edit files in the data/markdown/ directory</p>
+
+<p>2.1 For Guard to pick up your changes, the Markdown files need to have the .md extension.</p></li>
+<li><p>Guard will detect the changes and create a corresponding file in the data/html/ directory.</p></li>
+<li><p>To create collapsible regions.</p></li>
+</ol>
+
+<blockquote>
+  <blockquote>
+    <p>In the markdown file, surround the desired collapsible region with:</p>
+  </blockquote>
+</blockquote>
+
+<pre><code>            &lt;div markdown="1" class="collapse" title="your text here"&gt;
+            ...
+            &lt;/div&gt;
+</code></pre>
+
+<h2>Links for Markdown syntax</h2>
+
+<ul>
+<li><p><a href="http://en.wikipedia.org/wiki/Markdown">http://en.wikipedia.org/wiki/Markdown</a></p></li>
+<li><p><a href="http://cdn4.libsyn.com/howtube/Markdown_Cheat_Sheet.pdf">http://cdn4.libsyn.com/howtube/Markdown_Cheat_Sheet.pdf</a></p></li>
+</ul>
+
+
+</body>
+</html>

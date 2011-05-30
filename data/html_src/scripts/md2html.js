@@ -12,7 +12,7 @@ $(document).ready( function() {
       title = ''
     }
     var hold_html = $(ele).html();
-    hold_html = '<span class="collapse_toggle"><img class="toggle_ind" src="img/right.gif" /> ' + title + '</span>\n<div class="collapse_region">' + hold_html;
+    hold_html = '<span class="collapse_toggle"><img class="toggle_ind" src="../html_src/img/right.gif" /> ' + title + '</span>\n<div class="collapse_region">' + hold_html;
     hold_html += '\n<div>';
     $(ele).html(hold_html);
 
@@ -43,9 +43,9 @@ function toggle_collapse_region(ele) {
 }
 
 function get_next_image_src(cur_img_ele) {
-  if ($(cur_img_ele).attr("src") === "img/right.gif") {
-    return ("img/down.gif");
+  if ($(cur_img_ele).attr("src") === "../html_src/img/right.gif") {
+    return ("../html_src/img/down.gif");
   }
 
-  return ("img/right.gif");
+  return ("../html_src/img/right.gif");
 }
