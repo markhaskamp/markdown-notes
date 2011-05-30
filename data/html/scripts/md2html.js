@@ -1,7 +1,8 @@
-// var foo_switch = -1;
-// var foo = { -1: "img/arrow_05.gif",
-//              1: "img/arrow_05_down.gif"};
-// 
+
+var foo_switch = 2;
+var foo = ["img/arrow_05.gif", 
+           "img/arrow_05_down.gif"];
+
 $(document).ready( function() {
   $('div#toc').headerlinks({
                  minlen: 0
@@ -38,5 +39,9 @@ function hide_collapse_regions() {
 }
 
 function toggle_collapse_region(ele) {
+  foo_switch += 1;
+  var cur_img = $(ele).children()[0];
+  $(cur_img).attr("src", foo[foo_switch%2])
+
   ele.next().toggle();
 }
