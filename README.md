@@ -51,7 +51,7 @@
 
     2.1 For Guard to pick up your changes, the Markdown files need to have the .md extension.
 
-3. Guard will detect the changes and create a corresponding file in the data/html/ directory.
+3. Guard will detect the changes and create a corresponding file in the data/html_gen/ directory.
 
 4. To create collapsible regions.
 
