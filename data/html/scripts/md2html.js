@@ -1,7 +1,7 @@
 
-var foo_switch = 2;
-var foo = ["img/arrow_05.gif", 
-           "img/arrow_05_down.gif"];
+var img_src_switch = 2;
+var img_src = ["img/arrow_05.gif", 
+               "img/arrow_05_down.gif"];
 
 $(document).ready( function() {
   $('div#toc').headerlinks({
@@ -39,9 +39,14 @@ function hide_collapse_regions() {
 }
 
 function toggle_collapse_region(ele) {
-  foo_switch += 1;
-  var cur_img = $(ele).children()[0];
-  $(cur_img).attr("src", foo[foo_switch%2])
-
   ele.next().toggle();
+
+  var cur_img = $(ele).children()[0];
+  next_img_src = get_next_image_src()
+  $(cur_img).attr("src", next_img_src);
+}
+
+function get_next_image_src() {
+  img_src_switch += 1;
+  return (img_src[img_src_switch%2]);
 }
