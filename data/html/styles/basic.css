@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #toc {
-  background-color: #ada54e;
+  background-color: #d8d8d8;
   float: right;
 }
 
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5 {
 
 .collapse_region {
   border: 1px solid black;
-  background-color: #ada54e;
+  background-color: #f8f8f8;
 
-  padding-left: 2px;
+  padding-left: 5px;
 }
