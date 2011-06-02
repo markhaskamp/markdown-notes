@@ -1,6 +1,6 @@
 *.swp
 *.*~
 Gemfile.lock
-data/html_gen/*.html
-data/markdown/*.md
+data/html_gen/*
+data/markdown/*
 
