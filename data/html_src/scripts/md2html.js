@@ -31,7 +31,12 @@ $('.collapse_toggle').hover( function() { $(this).css('cursor', 'pointer'); },
 });
 
 function hide_collapse_regions() {
-  $('.collapse_region').toggle();
+  $('.collapse_region').each( function() {
+    ele = $(this);
+    if ($(ele).parent().attr("collapse_state") !== "open") {
+      $(ele).toggle();
+    }
+  });
 }
 
 function toggle_collapse_region(ele) {
