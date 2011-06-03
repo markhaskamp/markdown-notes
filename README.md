@@ -57,9 +57,11 @@
 
 >>In the markdown file, surround the desired collapsible region with:
 
-                <div markdown="1" class="collapse" title="your text here">
+                <div markdown="1" class="collapse" title="your text here" collapse="true">
                 ...
                 </div>
+
+>>>    collapse="true" is optional
 
 ## Links for Markdown syntax
 
